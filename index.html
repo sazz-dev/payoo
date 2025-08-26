@@ -14,32 +14,44 @@
     <!-- CSS Link -->
      <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body type="button" class="bg-[#F4F5F7] h-[100vh] flex flex-col items-center">
+  <body type="button" class="bg-[#F4F5F7] w-[450px] h-[150vh] flex flex-col items-center mx-auto">
 
 
 
-    <section class="bg-[#0874F2] w-full flex flex-col justify-center items-center h-[50%]  ">
-      <img class="absolute -top-5" src="assets/bg-design-top.svg" alt="">
+    <section class="bg-[#0874F2] w-full flex flex-col items-center h-[40%] ">
+      <img class="absolute -top-5 z-0" src="assets/bg-design-top.svg" alt="">
 
-      <div class="flex h-[96px] justify-center gap-10 z-10 relative -top-30">
+      <div class="flex h-[96px] px-8 w-full justify-between z-10 relative mt-20">
         
         <div class="bg-white p-[17px] rounded-[22px] w-[96px] flex items-center justify-center"><img src="assets/wallet 1.svg" alt=""></div>
         <div class="bg-white p-[17px] rounded-[22px] w-[96px] flex items-center justify-center relative top-10"><img src="assets/send-top.svg" alt=""></div>
         <div class="bg-white p-[17px] rounded-[22px] w-[96px] flex items-center justify-center"><img src="assets/purse-top.svg" alt=""></div>
       </div>
 
+      <h1 class=" mt-20 z-10 font-semibold text-center text-[55px] leading-tight text-white">One App <br> Everything</h1>
+
       
     </section>
 
-    <form>
+
+    <section class=" mt-[-120px] bg-white w-full h-[60%] rounded-t-[80px] flex items-center flex-col px-15 pt-8">
+
+          <img class="w-20" src="assets/payoo_favicon.png" alt="">
+
+    <form class="w-full mt-5">
       <div>
         <label for="">Mobile Number</label>
         <br>
-        <input type="text" placeholder="Type here" class="bg-[#F4F5F7]" />
+        <input type="text" placeholder="Enter Your Mobile Number" class="bg-[#F4F5F7] rounded-xl p-4 mt-2 w-full" />
       </div>
-
-
+      <div class="mt-5">
+        <label for="">Pin Number</label>
+        <br>
+        <input type="text" placeholder="Enter Your Pin" class="bg-[#F4F5F7] rounded-xl p-4 mt-2 w-full" />
+      </div>
     </form>
+
+    </section>
 
 
 
