@@ -14,42 +14,52 @@
     <!-- CSS Link -->
      <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body type="button" class="bg-[#F4F5F7] h-[100vh] md:w-[450px] flex flex-col items-center mx-auto">
+  <body type="button" class=" h-[100vh] md:w-[450px] flex flex-col items-center mx-auto">
 
 
 
-    <section class="bg-[#0874F2] w-full flex flex-col items-center h-[60%] ">
+    <section class="pb-50 bg-[#0874F2] w-full flex flex-col items-center">
       <img class="absolute -top-5 z-0" src="assets/bg-design-top.svg" alt="">
 
-      <div class="flex h-[80px] px-8 w-full justify-between z-10 relative mt-20">
+      <div class="flex h-[80px] px-8 w-full justify-between z-10 relative mt-20 ">
         
         <div class="bg-white p-[17px] rounded-[22px] w-[80px] flex items-center justify-center"><img src="assets/wallet 1.svg" alt=""></div>
         <div class="bg-white p-[17px] rounded-[22px] w-[80px] flex items-center justify-center relative top-10"><img src="assets/send-top.svg" alt=""></div>
         <div class="bg-white p-[17px] rounded-[22px] w-[80px] flex items-center justify-center"><img src="assets/purse-top.svg" alt=""></div>
       </div>
 
-      <h1 class=" mt-20 z-10 font-semibold text-center text-[55px] leading-tight text-white">One App <br> Everything</h1>
+      <h1 class="z-10 mt-20 font-semibold text-center text-[55px] leading-12 text-white">Payoo <br> Everything</h1>
 
       
     </section>
 
 
-    <section class="z-20 mt-[-100px] bg-white w-full h-[40%] rounded-t-[80px] flex items-center flex-col px-15 pt-8">
+    <section class=" z-20  bg-white w-full flex items-center flex-col h-full relative ">
 
-          <img class="w-20" src="assets/payoo_favicon.png" alt="">
+      <div class="bg-white rounded-t-[500px] scale-x-120 -mt-40 w-full h-[500px] absolute z-0"></div>
 
-    <form class="w-full mt-5">
+      <div class="-mt-35 w-full px-15 z-30 flex flex-col items-center">
+
+         <img class=" w-20" src="assets/payoo_favicon.png" alt="">
+
+    <form class="w-full mt-10">
       <div>
         <label class="text-[22px] font-medium" for="">Mobile Number</label>
         <br>
-        <input type="text" placeholder="Enter Your Mobile Number" class="bg-[#F4F5F7] rounded-xl p-4 mt-3 w-full" />
+        <input type="number" placeholder="Enter Your Mobile Number" class="bg-[#F4F5F7] rounded-xl p-4 mt-3 w-full" />
       </div>
       <div class="mt-5">
         <label class="text-[22px] font-medium" for="">Pin Number</label>
         <br>
-        <input type="text" placeholder="Enter Your Pin" class="bg-[#F4F5F7] rounded-xl p-4 mt-3 w-full" />
+        <input type="number" placeholder="Enter Your Pin" class="bg-[#F4F5F7] rounded-xl p-4 mt-3 w-full" />
       </div>
+
+      <button class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2] text-white text-[18px] font-semibold mt-5">Login</button>
     </form>
+
+
+      </div>
+   
 
     </section>
 
