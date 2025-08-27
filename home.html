@@ -37,7 +37,7 @@
 
     <div class="bg-[#0059C0] w-[115px] h-[47px] p-[7px] rounded-full flex items-center gap-2">
         <img class="bg-white p-2 w-8 h-8 rounded-full" src="assets/taka.svg" alt="">
-        <h4 class="text-white font-semibold">45000</h4>
+        <h4 id="available-balance" class="text-white font-semibold">45000</h4>
     </div>
     <div class="bg-[#ffff] w-[130px] h-[47px] p-[7px] rounded-full flex items-center gap-1">
         <img class=" w-6 " src="assets/gift.svg" alt="">
@@ -117,8 +117,8 @@
     <div>
         <label class="text-[#525252] text-[18px] font-medium" for="">Select A Bank</label>
         <br>
-        <select class="select bg-[#F4F5F7] rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none">
-         <option disabled selected>Pick a color</option>
+        <select id="bank" class="select bg-[#F4F5F7] rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none">
+         <option disabled selected>Select Bank</option>
          <option>AB Bank</option>
          <option>Eastern Bank</option>
          <option>Islami Bank</option>
@@ -126,27 +126,27 @@
       </div>
 
     <div>
-        <label class="text-[#525252] text-[18px] font-medium" for="">Bank Account Number</label>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Bank Account Number</label>
         <br>
-    <input type="number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
+    <input type="number" id="account-number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
     rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
   </div>
 
     <div>
-        <label class="text-[#525252] text-[18px] font-medium" for="">Amount to Add</label>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Amount to Add</label>
         <br>
-    <input type="number" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
+    <input type="number" id="add-amount" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
     rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
   </div>
 
     <div>
         <label class="text-[#525252] text-[18px] font-medium" for="">Pin Number</label>
         <br>
-    <input type="number" placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
+    <input type="number" id="add-pin"  placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
     rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
   </div>
 
-      <button class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+      <button id="add-money-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
        text-white text-[20px] font-semibold ">Add Money</button>
 
 
@@ -156,6 +156,6 @@
       
 </section>
 
-
+<script src="styles/home.js"></script>
 </body>
 </html>
