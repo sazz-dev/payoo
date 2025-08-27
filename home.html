@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+     <!-- Faveicon -->
+    <link rel="shortcut icon" href="assets/payoo_favicon.png" type="image/x-icon">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="styles/index.css">
+
+
+     <!-- Daisy UI -->
+
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    
+<body class="bg-[#F4F5F7] h-[100vh] max-w-lg mx-auto px-[20px] py-5">
+
+<nav class="min-h-[50px] flex justify-between">
+    <img src="assets/payoo_logo.svg" alt="">
+    <img src="assets/logout-icon.svg" alt="">
+</nav>
+
+<section class="w-full h-[180px] my-5 bg-[#0874F2] rounded-[18px] p-4 flex flex-col justify-between
+ bg-[url('/assets/bg-top-card.svg')] bg-cover bg-center">
+
+    <!-- Top -->
+
+<div class="flex justify-between">
+
+    <div class="bg-[#0059C0] w-[115px] h-[47px] p-[7px] rounded-full flex items-center gap-2">
+        <img class="bg-white p-2 w-8 h-8 rounded-full" src="assets/taka.svg" alt="">
+        <h4 class="text-white font-semibold">45000</h4>
+    </div>
+    <div class="bg-[#ffff] w-[130px] h-[47px] p-[7px] rounded-full flex items-center gap-1">
+        <img class=" w-6 " src="assets/gift.svg" alt="">
+        <h4 class="text-black font-medium ">Get Bonus</h4>
+    </div>
+
+</div>
+
+<!-- Bottom -->
+<div class="flex justify-between">
+
+
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-2">
+    <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
+        <img class="w-6" src="assets/wallet.svg" alt=""> 
+    </div>
+    <p class="text-white text-[14px]">Add Money</p>
+    </div>
+</div>
+
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-2">
+    <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
+        <img class="w-6" src="assets/cashout.svg" alt=""> 
+    </div>
+    <p class="text-white text-[14px]">Cashout</p>
+    </div>
+</div>
+
+
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-2">
+    <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
+        <img class="w-6" src="assets/paybill.svg" alt=""> 
+    </div>
+    <p class="text-white text-[14px]">Pay Bill</p>
+    </div>
+</div>
+
+
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-2">
+    <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
+        <img class="w-6" src="assets/transfer.svg" alt=""> 
+    </div>
+    <p class="text-white text-[14px]">Transfer </p>
+    </div>
+</div>
+
+
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-2">
+    <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
+        <img class="w-6" src="assets/taransaction.svg" alt=""> 
+    </div>
+    <p class="text-white text-[14px]">Transactions</p>
+    </div>
+</div>
+
+
+</div>
+
+</section>
+
+<!-- Form Items -->
+
+<section>
+
+    <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Add Money</h2>
+
+    <form class="bg-white p-5 rounded-[24px] flex flex-col gap-5">
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Select A Bank</label>
+        <br>
+        <select class="select bg-[#F4F5F7] rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none">
+         <option disabled selected>Pick a color</option>
+         <option>AB Bank</option>
+         <option>Eastern Bank</option>
+         <option>Islami Bank</option>
+        </select>
+      </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Bank Account Number</label>
+        <br>
+    <input type="number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Amount to Add</label>
+        <br>
+    <input type="number" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Pin Number</label>
+        <br>
+    <input type="number" placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+      <button class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+       text-white text-[20px] font-semibold ">Add Money</button>
+
+
+
+    </form>
+      
+      
+</section>
+
+
 </body>
 </html>
