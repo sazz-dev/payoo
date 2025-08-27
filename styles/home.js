@@ -24,9 +24,60 @@ document.getElementById("add-money-btn") .addEventListener ("click", function(e)
         return;
     }
 
-    
+
 
     const totalNewBalence = amount + availableBalence
     document.getElementById('available-balance').innerText = totalNewBalence
+
+})
+
+
+
+
+// Toggling Feature
+
+document.getElementById('add-top-btn') .addEventListener('click', function(){
+    document.getElementById('add-money-parent').style.display = 'block'
+    document.getElementById('cash-out-parent').style.display = 'none'
+    document.getElementById('paybill-parent').style.display = 'none'
+    document.getElementById('transfer-parent').style.display = 'none' 
+    document.getElementById('bonus-parent').style.display = 'none' 
+})
+
+
+document.getElementById('cashout-top-btn') .addEventListener('click', function(){
+    document.getElementById('cash-out-parent').style.display = 'block'
+    document.getElementById('add-money-parent').style.display = 'none'
+    document.getElementById('paybill-parent').style.display = 'none'
+    document.getElementById('transfer-parent').style.display = 'none' 
+        document.getElementById('bonus-parent').style.display = 'none' 
+
+})
+
+document.getElementById('paybill-top-btn') .addEventListener('click', function(){
+    document.getElementById('paybill-parent').style.display = 'block'
+    document.getElementById('cash-out-parent').style.display = 'none'
+    document.getElementById('add-money-parent').style.display = 'none'
+    document.getElementById('transfer-parent').style.display = 'none' 
+        document.getElementById('bonus-parent').style.display = 'none' 
+
+})
+
+
+document.getElementById('transfer-top-btn') .addEventListener('click', function(){
+    document.getElementById('transfer-parent').style.display = 'block' 
+    document.getElementById('paybill-parent').style.display = 'none'
+    document.getElementById('cash-out-parent').style.display = 'none'
+    document.getElementById('add-money-parent').style.display = 'none'
+        document.getElementById('bonus-parent').style.display = 'none' 
+
+})
+
+document.getElementById('bonus-top-btn') .addEventListener('click', function(){
+    document.getElementById('bonus-parent').style.display = 'block' 
+    document.getElementById('transfer-parent').style.display = 'none' 
+    document.getElementById('paybill-parent').style.display = 'none'
+    document.getElementById('cash-out-parent').style.display = 'none'
+    document.getElementById('add-money-parent').style.display = 'none'
 
 })

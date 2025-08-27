@@ -31,7 +31,7 @@
 <section class="w-full h-[180px] my-5 bg-[#0874F2] rounded-[18px] p-4 flex flex-col justify-between
  bg-[url('/assets/bg-top-card.svg')] bg-cover bg-center">
 
-    <!-- Top -->
+<!-- Top -->
 
 <div class="flex justify-between">
 
@@ -41,7 +41,7 @@
     </div>
     <div class="bg-[#ffff] w-[130px] h-[47px] p-[7px] rounded-full flex items-center gap-1">
         <img class=" w-6 " src="assets/gift.svg" alt="">
-        <h4 class="text-black font-medium ">Get Bonus</h4>
+        <h4 id="bonus-top-btn" class="text-black font-medium ">Get Bonus</h4>
     </div>
 
 </div>
@@ -50,7 +50,7 @@
 <div class="flex justify-between">
 
 
-<div class="flex justify-center">
+<div id="add-top-btn" class="flex justify-center">
     <div class="flex flex-col items-center gap-2">
     <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
         <img class="w-6" src="assets/wallet.svg" alt=""> 
@@ -59,7 +59,7 @@
     </div>
 </div>
 
-<div class="flex justify-center">
+<div id="cashout-top-btn"  class="flex justify-center">
     <div class="flex flex-col items-center gap-2">
     <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
         <img class="w-6" src="assets/cashout.svg" alt=""> 
@@ -69,7 +69,7 @@
 </div>
 
 
-<div class="flex justify-center">
+<div id="paybill-top-btn"  class="flex justify-center">
     <div class="flex flex-col items-center gap-2">
     <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
         <img class="w-6" src="assets/paybill.svg" alt=""> 
@@ -79,7 +79,7 @@
 </div>
 
 
-<div class="flex justify-center">
+<div id="transfer-top-btn"  class="flex justify-center">
     <div class="flex flex-col items-center gap-2">
     <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center" > 
         <img class="w-6" src="assets/transfer.svg" alt=""> 
@@ -88,16 +88,12 @@
     </div>
 </div>
 
-
-
-
-
 </div>
 
 </section>
 
 
-<div class="fixed bottom-4 left-1/2 -translate-x-1/2">
+<div id="all-transfer-btn"  class="fixed bottom-4 left-1/2 -translate-x-1/2">
   <div class="bg-[#0874F2] w-[220px] p-2 h-[65px] rounded-full flex items-center gap-3 shadow-lg">
     <div class="bg-white p-1 w-12 h-12 rounded-full flex items-center justify-center">
       <img class="w-8" src="assets/taransaction.svg" alt="">
@@ -106,9 +102,9 @@
   </div>
 </div>
 
-<!-- Form Items -->
+<!-------------------Add Money Form ------------------------->
 
-<section class="pb-20">
+<section  id="add-money-parent"  class="pb-20">
 
     <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Add Money</h2>
 
@@ -148,13 +144,143 @@
 
       <button id="add-money-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
        text-white text-[20px] font-semibold ">Add Money</button>
-
-
-
     </form>
-      
-      
 </section>
+
+<!-- Add Money Form END -->
+
+
+<!-------------------Cashout Form ------------------------->
+
+<section id="cash-out-parent" style= "display : none;" class="pb-20">
+
+    <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Cash Out</h2>
+
+    <form class="bg-white p-5 rounded-[24px] flex flex-col gap-5">
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Agent Number</label>
+        <br>
+    <input type="number" id="agent-number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Amount</label>
+        <br>
+    <input type="number" id="amount-cashout" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Pin Number</label>
+        <br>
+    <input type="number" id="add-pin"  placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+      <button id="cash-out-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+       text-white text-[20px] font-semibold ">Cashout</button>
+    </form>
+</section>
+
+<!-- Cashout Form END -->
+
+<!-------------------Pay BIll Form ------------------------->
+
+<section id="paybill-parent" style= "display : none;" class="pb-20">
+
+    <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Pay Bill</h2>
+
+    <form class="bg-white p-5 rounded-[24px] flex flex-col gap-5">
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Biller Account Number</label>
+        <br>
+    <input type="number" id="agent-number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Amount</label>
+        <br>
+    <input type="number" id="amount-cashout" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Pin Number</label>
+        <br>
+    <input type="number" id="add-pin"  placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+      <button id="cash-out-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+       text-white text-[20px] font-semibold ">Cashout</button>
+    </form>
+</section>
+
+<!-- Pay BIll END -->
+
+
+<!-------------------Transfer Form ------------------------->
+
+<section id="transfer-parent" style= "display : none;" class="pb-20">
+
+    <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Transfer Money</h2>
+
+    <form class="bg-white p-5 rounded-[24px] flex flex-col gap-5">
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">User Account Number</label>
+        <br>
+    <input type="number" id="agent-number" placeholder="Enter 11 digit account number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Amount</label>
+        <br>
+    <input type="number" id="amount-transfer" placeholder="Add Amount to withdraw" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+    <div>
+        <label class="text-[#525252] text-[18px] font-medium" for="">Pin Number</label>
+        <br>
+    <input type="number" id="add-pin"  placeholder="Enter 4 digit pin number" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+      <button id="transfer-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+       text-white text-[20px] font-semibold ">Send Now</button>
+    </form>
+</section>
+
+<!-- Transfer Form END -->
+
+
+<!-------------------Bonus ------------------------->
+
+<section id="bonus-parent" style= "display : none;" class="pb-20">
+
+    <h2 class="font-semibold text-[22px] mt-10 mb-4 ">Get Bonus</h2>
+
+    <form class="bg-white p-5 rounded-[24px] flex flex-col gap-5">
+
+    <div>
+        <label  class="text-[#525252] text-[18px] font-medium" for="">Enter Bonus Coupon</label>
+        <br>
+    <input type="text" id="agent-number" placeholder="Enter your coupon" class="bg-[#F4F5F7] 
+    rounded-xl h-15 p-4 mt-3 w-full text-[18px] border-none" />
+  </div>
+
+      <button id="transfer-btn" class="type-button w-full py-[14px] rounded-2xl bg-[#0874F2]
+       text-white text-[20px] font-semibold ">Get Bonus</button>
+    </form>
+</section>
+
+<!-- Bonus Form END -->
 
 <script src="styles/home.js"></script>
 </body>
