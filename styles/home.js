@@ -32,6 +32,18 @@ document.getElementById("add-money-btn") .addEventListener ("click", function(e)
 })
 
 
+// Cahsout Function
+document.getElementById('cash-out-btn') .addEventListener ('click', function (e){
+    e.preventDefault()
+
+    const amount = parseInt(document.getElementById('amount-cashout').value)
+    const availableBalence = parseInt (document.getElementById('available-balance').innerText) 
+
+    const totalNewBalence = availableBalence - amount
+    document.getElementById('available-balance').innerText = totalNewBalence
+
+})
+
 
 
 // Toggling Feature
